@@ -4,7 +4,7 @@ ARG GLEAM_VERSION="v1.0.0"
 
 RUN apt-get update \
   && export DEBIAN_FRONTEND=noninteractive \
-  && apt-get -y install --no-install-recommends erlang curl 2>&1 \
+  && apt-get -y install --no-install-recommends erlang curl inotify-tools 2>&1 \
   # Install Rebar3
 
   && curl -sSL https://github.com/erlang/rebar3/releases/download/3.22.1/rebar3 -o /usr/local/bin/rebar3 \
